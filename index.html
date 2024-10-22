@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="container-img">
+            <img src="./assets/imagem.png" alt="imagem" width="550" class="image">
+        </div>
+        <div class="container-buttons">
+            <p id="giftMessage">Você ganhou uma pochete do Divertidamente 2, para resgatar realize o Login</p>
+            <div class="buttons">
+                <button class="btn" id="facebook">
+                    <svg id="facebookIcon" width="30" height="30" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.875 24C46.875 18.4304 44.5703 13.089 40.468 9.15075C36.3656 5.21249 30.8016 2.99999 25 2.99999C19.4917 2.99511 14.1843 4.98537 10.1378 8.57321C6.09136 12.161 3.60383 17.0823 3.1721 22.354C2.74037 27.6257 4.39622 32.8598 7.8089 37.0106C11.2216 41.1614 16.1398 43.9234 21.5813 44.745V30.069H16.0313V24H21.5844V19.374C21.5844 14.112 24.85 11.202 29.8469 11.202C32.2406 11.202 34.7438 11.613 34.7438 11.613V16.782H31.9844C29.2656 16.782 28.4219 18.402 28.4219 20.061V24H34.4875L33.5188 30.069H28.4188V44.745C33.5641 43.9628 38.2498 41.4437 41.6331 37.6409C45.0164 33.838 46.8751 29.0011 46.875 24Z" fill="white"/>
+                    </svg>
+                     <span>Fazer login com o Facebook</span>                  
+                </button>
+                <button class="btn" id="google">
+                    <svg width="30" height="30" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3_16)">
+                        <path d="M44.4638 21.9023C44.4638 20.1406 44.3142 18.855 43.9904 17.5219H22.938V25.4732H35.2953C35.0462 27.4493 33.7009 30.4251 30.7111 32.4248L30.6692 32.691L37.3256 37.6184L37.7868 37.6624C42.0221 33.9247 44.4638 28.4253 44.4638 21.9023Z" fill="#4285F4"/>
+                        <path d="M22.938 42.8523C28.992 42.8523 34.0744 40.9477 37.7868 37.6624L30.7111 32.4248C28.8177 33.6866 26.2764 34.5674 22.938 34.5674C17.0084 34.5674 11.9758 30.8299 10.1818 25.6638L9.91888 25.6851L2.99747 30.8036L2.90695 31.044C6.5942 38.0432 14.1681 42.8523 22.938 42.8523Z" fill="#34A853"/>
+                        <path d="M10.1818 25.6638C9.70848 24.3306 9.43453 22.9021 9.43453 21.4262C9.43453 19.95 9.70848 18.5217 10.1569 17.1885L10.1444 16.9046L3.13625 11.7039L2.90696 11.8081C1.38726 14.7126 0.515259 17.9742 0.515259 21.4262C0.515259 24.8781 1.38726 28.1396 2.90696 31.044L10.1818 25.6638Z" fill="#FBBC05"/>
+                        <path d="M22.938 8.28472C27.1484 8.28472 29.9885 10.0226 31.608 11.4749L37.9362 5.5708C34.0497 2.11882 28.992 0 22.938 0C14.1681 0 6.5942 4.80894 2.90695 11.8081L10.1569 17.1885C11.9758 12.0224 17.0084 8.28472 22.938 8.28472Z" fill="#EB4335"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_3_16">
+                        <rect width="45" height="43" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Fazer login com o Google</span>
+                </button>
+            </div>
+            
+            <form class="loginForm" id="loginForm">
+                <label for="login"></label>
+                <input type="text" id="login" name="Login" placeholder="E-mail" required>
+
+                <label for="password"></label>
+                <input type="password" id="password" name="Password" placeholder="Senha" required>
+
+                <button>Resgatar Prêmio!</button>
+            </form>
+            <p id="finalMessage">O prêmio esgotou, mas quando estiver disponível enviaremos um link de confirmação para seu e-mail.</p>
+        </div>
+    </main>
+</body>
+</html>

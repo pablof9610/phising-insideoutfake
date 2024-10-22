@@ -1,0 +1,121 @@
+body {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container button:hover {
+    cursor: pointer;
+}
+
+.image {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: flex;
+}
+
+.container-buttons {
+    font-family: 'Inter';
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    max-width: 550px;
+    height: 300px;
+}
+
+.container-buttons > * {
+    margin-bottom: 30px;
+}
+
+.container-buttons p {
+    text-align: center;
+}
+
+.container-buttons .btn {
+    font-family: 'Inter';
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    padding-top: 6%;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 8px;
+    width: 60%;
+}
+
+.container-buttons .btn svg {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.container-buttons .btn span {
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+}
+
+.container-buttons .loginForm {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-buttons .loginForm input {
+    background-color: #363535;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    height: 30px;
+    font-size: 15px
+}
+
+.container-buttons .loginForm label {
+    font-size: 15px;
+}
+
+.container-buttons .loginForm button {
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #fdc304;
+    overflow: hidden;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.buttons .btn{
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+#facebook {
+    background-color: #1877F2;
+}
+
+#google {
+    background-color: #3b3b3b;
+}
+
+
+
+#finalMessage {
+    display: none;
+    max-width: 50%;
+}
