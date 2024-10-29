@@ -23,7 +23,7 @@ body {
 }
 
 .container-buttons {
-    font-family: 'Inter';
+    font-family: 'Averia Serif Libre';
     background-color: #181818;
     display: flex;
     flex-direction: column;
@@ -75,6 +75,7 @@ body {
 }
 
 .container-buttons .loginForm input {
+    font-family: 'Averia Serif Libre';
     background-color: #363535;
     border: none;
     border-radius: 5px;
@@ -88,6 +89,7 @@ body {
 }
 
 .container-buttons .loginForm button {
+    font-family: 'Averia Serif Libre';
     border: none;
     border-radius: 5px;
     font-size: 13px;
